@@ -1,0 +1,3 @@
+[submodule "JawaScriptParser"]
+	path = JawaScriptParser
+	url = https://github.com/hackjackhack/JawaScriptParser
