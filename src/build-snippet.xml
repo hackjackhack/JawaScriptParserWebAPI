@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<project name="test" basedir=".">
+<target name="remove-signatures">
+    <exec executable="C:\Program Files\7-Zip\7z.exe">
+        <arg value="d"/>
+        <arg value="${artifact.output.path}/JawaScriptParserWebAPI.jar"/>
+        <arg value="*.RSA"/>
+        <arg value="*.SF"/>
+        <arg value="*.DSA"/>
+        <arg value="-r"/>
+    </exec>
+</target>
+</project>
