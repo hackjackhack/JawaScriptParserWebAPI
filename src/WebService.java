@@ -27,5 +27,9 @@ public class WebService {
                 return "";
             }
         });
+
+        get("/ping", (request, response) -> {
+           return "";
+        });
     }
 }
