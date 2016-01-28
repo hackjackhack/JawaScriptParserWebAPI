@@ -24,7 +24,8 @@ public class WebService {
                 String output = Serializer.toJSON(tree);
                 return output;
             } catch (UnexpectedTokenException e) {
-                return "";
+                response.status(400);
+                return e.toString();
             }
         });
 
